@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .App {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  .kanban-board {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+  }
+  
+  .ticket-group {
+    /* background-color: #e0e0e0; */
+    padding: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    border-radius: 8px;
+  }
+  
+  .ticket-group h3 {
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .ticket-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-card p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .ticket-card p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .kanban-board {
+      flex-direction: column;
+    }
+  
+    .ticket-group {
+      max-width: 100%;
+    }
+  }
+  
